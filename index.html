@@ -22,18 +22,6 @@
       overflow-x: hidden;
     }
 
-    .bg-video {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      object-fit: cover;
-      z-index: -2;
-      pointer-events: none;
-      opacity: 0.22;
-    }
-
     .dots-bg {
       position: fixed;
       inset: 0;
@@ -365,7 +353,6 @@
       text-align: center;
     }
 
-    /* Ads Credit */
     .ad-credit {
       position: relative;
       z-index: 2;
@@ -467,7 +454,7 @@
 
 <body>
 
-  <!-- Animated Background Dots -->
+  <!-- Animated Background -->
   <div class="dots-bg">
     <div class="dot"></div>
     <div class="dot"></div>
@@ -498,7 +485,7 @@
       />
     </div>
 
-    <!-- Main Title -->
+    <!-- Name -->
     <div class="main-title">
       AYUSH CRICKET TIPS
     </div>
@@ -587,9 +574,8 @@
 
     <!-- Telegram Button -->
     <a
-      href="https://t.me/+Gj8ZsGbNz7ZlYTk1"
+      href="https://t.me/+e-9SaZeFHh0wYWU1"
       class="cta-btn"
-      style="margin-top:10px;"
     >
 
       <svg
@@ -608,19 +594,20 @@
 
     </a>
 
-    <!-- Redirect Timer -->
+    <!-- 60 Second Countdown -->
     <div
       class="redirecting"
       id="redirect-timer"
     >
-      Redirecting in 10 seconds...
+      Redirecting in 60 seconds...
     </div>
 
   </div>
 
-  <!-- Ads Credit -->
+  <!-- Ads Managed By -->
   <div class="ad-credit">
     <div class="ad-credit-box">
+
       <span class="ad-credit-label">
         Ads managed by
       </span>
@@ -633,19 +620,20 @@
       >
         @Shubhampanddit
       </a>
+
     </div>
   </div>
 
   <script>
-    // Telegram redirect after 10 seconds
+    // Telegram redirect after 60 seconds
 
     const redirectUrl =
-      document.querySelector('.cta-btn').getAttribute('href');
+      "https://t.me/+e-9SaZeFHh0wYWU1";
 
     const timerElem =
-      document.getElementById('redirect-timer');
+      document.getElementById("redirect-timer");
 
-    let seconds = 10;
+    let seconds = 60;
 
     const interval = setInterval(() => {
 
@@ -661,7 +649,6 @@
         clearInterval(interval);
 
         window.location.href = redirectUrl;
-
       }
 
     }, 1000);
